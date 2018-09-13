@@ -1,6 +1,6 @@
 # BIT607_A2_3509807
 Assignment 2 | Standards, protocols and security issues |  Tools and techniques
-Role of HTTP Caching
+<h3>Role of HTTP Caching</h3>
 The performance of web sites and applications can be significantly improved by reusing previously fetched resources. Web caches reduce latency and network traffic and thus lessen the time needed to display a representation of a resource. By making use of HTTP caching, Web sites become more responsive. However, incorrect caching can cause users to see out-of-date content and hard to debug issues.
 HTTP caching occurs when the browser stores local copies of web resources for faster retrieval the next time the resource is required. As your application serves resources it can attach cache headers to the response specifying the desired cache behavior. When an item is fully cached, the browser may choose to not contact the server at all and simply use its own cached copy. For instance, once CSS stylesheets from your application are downloaded by the browser there’s no need to download them again during the user’s session. This holds true for many asset types like javascript files, images and even infrequently changing dynamic content. In these instances it is beneficial for the users browser to cache this file locally, and use that copy whenever the resource is requested again. An application using HTTP cache headers is able to control this caching behavior and alleviate server-side load.
 
